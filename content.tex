@@ -12,9 +12,11 @@
 \usepackage{fancyhdr}
 \usepackage{tikz}
 \usepackage{lipsum}
-\usepackage{svg}
 \usepackage{hyperref}
 \usepackage{wrapfig}
+\usepackage{parskip}
+\usepackage[a4paper, left=1in, right=1in, bottom=1in, top=0.5in]{geometry}
+\usepackage{parindent}
 \usetikzlibrary{shapes.geometric, arrows}
 \usetikzlibrary {arrows.meta}
 \usetikzlibrary{positioning}
@@ -29,6 +31,7 @@
 \renewcommand{\headrulewidth}{0pt}
 \rfoot{\thepage}
 \pagenumbering{arabic}
+
 \begin{document}
 \title{Judul Praktikum dengan \emph{Bahasa Asing}}
 
@@ -42,6 +45,8 @@
 
 \maketitle
 \thispagestyle{fancy}
+\setlength{\parskip}{12pt}
+\setlength{\parindent}{12pt}
 
 \begin{abstract}
 Bagian ini diisi oleh abstract. Menjelaskan tentang kegiatan praktikum yang dilakukan serta menjelaskan hasilnya. Sebagai contoh lihat abstrak berikut. Praktikum XXXX Modul X: Pengukuran resistansi pada rangkaian resistor sederhana memiliki tujuan untuk mengetahui cara menghitung parameter pada rangkaian resistor sederhana. Hasil yang ingin dicapai adalah mengetahui besaran resistansi, arus, dan voltase pada rangkaian resistor sederhana. Pada praktikum ini didapat hasil pengukuran yang sesuai dengan teori sehingga praktikum dinyatakan berhasil. Pada praktikum didapat hasil pengukuran yang tidak sesuai dengan teori, hal ini dikarenakan {sebutkan alasan mengapa hasil tidak sesuai}. Bentuk abstrak bisa beragam namun ditekankan bahwa abstrak harus mencakup semua isi dari laporan 
@@ -51,14 +56,17 @@ Bagian ini diisi oleh abstract. Menjelaskan tentang kegiatan praktikum yang dila
 resistansi, resistor, [kata lain yang paling menggambarkan praktikum ini; format selalu menggunakan Italic]
 \end{IEEEkeywords}
 
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{12pt}
+
 \section{Pendahuluan}
-Pendahuluan adalah bagian laporan praktikum yang berisi penjelasan singkat tentang praktikum itu sendiri yang biasanya dimulai dari landasan teori yang singkat, pengertian – pengertian, dan alasan mengapa perlu dilakukan prakitikum ini. Lihat contoh pendahuluan berikut.\\
+Pendahuluan adalah bagian laporan praktikum yang berisi penjelasan singkat tentang praktikum itu sendiri yang biasanya dimulai dari landasan teori yang singkat, pengertian – pengertian, dan alasan mengapa perlu dilakukan prakitikum ini. Lihat contoh pendahuluan berikut.
 
-Resistor adalah sebuah komponen elektronik yang berguna untuk mengatur arus listrik yang mengalir pada sebuah rangkaian. Resistor dalam rangkaian memiliki tingkah laku yaitu mendisipasikan daya. Resistor banyak digunakan dalam devais elektronik seperti dalam computer, VNA, dll.\\
+Resistor adalah sebuah komponen elektronik yang berguna untuk mengatur arus listrik yang mengalir pada sebuah rangkaian. Resistor dalam rangkaian memiliki tingkah laku yaitu mendisipasikan daya. Resistor banyak digunakan dalam devais elektronik seperti dalam computer, VNA, dll.
 
-Maka dinilai perlu adanya kegiatan praktikum untuk memahami cara menghitung besaran pada rangkaian resistor, penulis telah melakukan praktikum {Judul Praktikum dengan Bahasa Asing} yang memiliki tujuan sebagai berikut:\\
+Maka dinilai perlu adanya kegiatan praktikum untuk memahami cara menghitung besaran pada rangkaian resistor, penulis telah melakukan praktikum {Judul Praktikum dengan Bahasa Asing} yang memiliki tujuan sebagai berikut:
 
-\begin{enumerate}[1.]
+\begin{enumerate}[1., leftmargin=1cm]
     \item Tujuan praktikum 1
     \item Tujuan Praktikum 2
 \end{enumerate}
@@ -90,7 +98,7 @@ Dasar teori tidak boleh copas dari modul praktikum namun menjadikan modul prakti
 \section{Metodologi Percobaan}
 
 \subsection{Alat Percobaan}
-\begin{enumerate}[1.]
+\begin{enumerate}[1., leftmargin=1cm]
     \item Alat Percobaan 1
     \item Alat Percobaan 2
     \item dst [cantumkan semua alat percobaan lainnya yang digunakan dalam praktikum] 
@@ -174,12 +182,12 @@ Apabila terdapat tabel data, maka gunakan format berikut
 \end{center}
 \end{table}
 
-Dalam merujuk tabel gunakan contoh sebagai berikut. “Tabel \ref{tab1} menunjukkan hasil pengamatan osilator collpits osilasi maksimum ketika switch N”.\\
+Dalam merujuk tabel gunakan contoh sebagai berikut. “Tabel \ref{tab1} menunjukkan hasil pengamatan osilator collpits osilasi maksimum ketika switch N”.
 
 Poin penting pada analisis selain menjelaskan kegiatan praktikum tiap tahapnya adalah membandingkan hasil yang didapat secara percobaan dengan teori yang ada. Ada beberapa kemungkinan yang akan terjadi yaitu hasil sesuai teori dan tidak sesuai. Jelaskan bahwa hasil telah sesuai teori jika sudah sesuai, dan jelaskan bahwa hasil tidak sesuai teori jika tidak. Apabila tidak sesuai teori, jelaskan juga alasannya mengapa hal tersebut bisa terjadi. Kemungkinan lainnya adalah hasil secara percobaan sedikit melenceng dari nilai teori sehingga bisa dijelaskan kenapa seperti itu, misalnya karena kesalahan pengukuran atau pengaruh lingkungan dsb. Asumsikan juga alat praktikum telah dikalibrasi dan sedang dalam kondisi baik sehingga tidak diperbolehkan menyalahkan alat praktikum.
 
 \section{Kesimpulan}
-Kesimpulan berisi tentang kesimpulan laporan praktikum. Bentuknya adalah per paragraf dan tiap paragraf menjawab tiap poin pada tujuan praktikum. Jika praktikum mempunyai 3 poin tujuan, maka 3 poin tersebut dijelaskan pada 3 paragraf kesimpulan. Karena kesimpulan memastikan seluruh kegiatan praktikum disampaikan, maka perlu dilihat ulang apakah tujuan praktikum kalian melingkupi seluruh kegiatan praktikum.\\
+Kesimpulan berisi tentang kesimpulan laporan praktikum. Bentuknya adalah per paragraf dan tiap paragraf menjawab tiap poin pada tujuan praktikum. Jika praktikum mempunyai 3 poin tujuan, maka 3 poin tersebut dijelaskan pada 3 paragraf kesimpulan. Karena kesimpulan memastikan seluruh kegiatan praktikum disampaikan, maka perlu dilihat ulang apakah tujuan praktikum kalian melingkupi seluruh kegiatan praktikum.
 
 Panduan penulisan lengkap template paper IEEE A4 dalam format docx dapat dilihat pada link berikut. \url{https://www.ieee.org/conferences/publishing/templates.html}.
 
@@ -193,13 +201,14 @@ Panduan penulisan lengkap template paper IEEE A4 dalam format docx dapat dilihat
 \bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
 \bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
 \bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
-\end{thebibliography}\hfill\\
+\end{thebibliography}
 
 %% Jika ingin menggunakan bibtex, silakan uncomment code di bawah ini
 
 %\bibliographystyle{plain}
 %\bibliography{refs}
-\hfill\\
+
+
 \section*{Biografi Singkat}
 
 \begin{wrapfigure}{l}{0.15\textwidth} %this figure will be at the left
@@ -207,7 +216,7 @@ Panduan penulisan lengkap template paper IEEE A4 dalam format docx dapat dilihat
     \includegraphics[width=0.15\textwidth]{./Figures/pas-foto.png}
 \end{wrapfigure}
 
-Berikan biografi singkat kalian dalam ini. Biografi yang ditulis diharapkan biografi serius. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+\noindent Berikan biografi singkat kalian dalam ini. Biografi yang ditulis diharapkan biografi serius. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
 
 
 \end{document}
