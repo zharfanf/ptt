@@ -9,7 +9,7 @@ There are two important files that you can modify, namely cover.tex and content.
 As its name says, is used as the cover, you can modify the content by changing it to the corresponding title, identity, and labs. 
 
 ## content.tex
-This file contains the main contents such as Abstrak, Pendahuluan, Dasar Teori, dll. 
+This file contains the main contents such as Abstrak, Pendahuluan, Dasar Teori, etc. 
 
 ## Note
 You are allowed to change the format, but DO IT AT YOUR OWN RISK!!!
@@ -22,3 +22,6 @@ If LaTeX has been installed on your machine, you can simply open the terminal on
 ```
 make all
 ```
+
+The output pdf file will be `main.pdf`
+
