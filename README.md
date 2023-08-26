@@ -15,9 +15,9 @@ This file contains the main contents such as Abstrak, Pendahuluan, Dasar Teori, 
 You are allowed to change the format, but DO IT AT YOUR OWN RISK!!!
 
 ## Compiling
-First, you need to install LaTeX on your own machine. For Windows users, you can install MiKTeX or proTeXt. For Mac OS users, you can install MacTeX.
+First, you need to install LaTeX distribution on your own machine. For Windows users, you can install MiKTeX or proTeXt. For Mac OS users, you can install MacTeX.
 
-If LaTeX has been installed on your machine, you can simply open the terminal on "ptt" directory and type 
+If LaTeX has been installed on your machine, you can simply open the terminal in "ptt" directory and type 
 
 ```
 make all

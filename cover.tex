@@ -2,12 +2,17 @@
 \usepackage{tikz}
 \usetikzlibrary{calc}
 \usepackage{amsmath}
+\usepackage{calc} % to make calculations with lengths
+\newlength{\myMargin}
+\setlength{\myMargin}{0.5cm}
 \usepackage{ragged2e}
 \usepackage{enumitem}
 \usepackage{mathptmx}
 \usepackage{anyfontsize}
+\usepackage{mathtools}
 \usepackage{t1enc}
 \usepackage[a4paper, left=1.57cm, top=0.95cm, bottom=2.54cm, right=1.57cm, headsep=1.27cm, footnotesep=1.27cm]{geometry}
+
 
 \begin{document}
 \pagestyle{empty}
@@ -18,17 +23,18 @@
 \begin{center}
     \hfill\\
     {\fontsize{16}{19.2}\selectfont LAPORAN PRAKTIKUM\\
-    ETXXXX PRAKTIKUM TEKNIK TELEKOMUNIKASI XA\\}\hfill\\\hfill\\
+    ET3212 PRAKTIKUM TEKNIK TELEKOMUNIKASI 4A\\}\hfill\\\hfill\\
     \fontsize{14}{16.8}\selectfont MODUL : XX\\\hfill\\\hfill\\
     \fontsize{16}{19.2}\selectfont JUDUL MODUL DENGAN \textit{BAHASA ASING}\hfill\\\hfill\\\hfill\\
-    {\fontsize{12}{14.4}\selectfont \begin{itemize}[leftmargin=5.08cm, rightmargin=0.08cm]
-        \item[] NAMA \hspace{22mm} : XXXXXXXXXXX
-        \item[] NIM  \hspace{27mm} : 181XXXXXXXX
-        \item[] KELOMPOK \hspace{11mm}      : XX
-        \item[] HARI, TANGGGAL : XXXXX
-        \item[] WAKTU  \hspace{20mm} : XX.00 - XX.00
-        \item[] ASISTEN \hspace{18mm} : XXXXXXXXXXX
-    \end{itemize}}\hfill\\\hfill\\
+    {
+     \fontsize{12}{14.4}\selectfont\begin{alignat*}{3}
+     \hspace{\myMargin}&\textrm{NAMA} \quad&&:&& \hspace{1mm}\textrm{XXXXXXXXX} \\
+     &\textrm{NIM}\quad&&:&& \hspace{1mm}\textrm{181XXXXXX} \\
+     &\textrm{KELOMPOK}\quad&&:&& \hspace{1mm}\textrm{XX} \\
+     &\textrm{HARI, TANGGGAL}\quad&&:&& \hspace{1mm}\textrm{XXXXX} \\
+     &\textrm{WAKTU}\quad&&:&& \hspace{1mm}\textrm{XX.00 - XX.00} \\
+     &\textrm{ASISTEN}\quad&&:&& \hspace{1mm}\textrm{XXXXXXXXXXX} \\
+    \end{alignat*}}\hfill\\\hfill\\
     \begin{figure}[htbp]
     \centerline{\includegraphics[height=5.06cm, width=3.73cm]{./Figures/logo.png}}
     \label{fig2}
